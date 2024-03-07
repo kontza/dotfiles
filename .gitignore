@@ -9,3 +9,5 @@ foo.*
 *.log
 data
 lazy-lock.json
+.config/tmux/plugins/tmux-continuum
+.config/tmux/plugins/tmux-resurrect
