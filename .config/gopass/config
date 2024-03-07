@@ -1,0 +1,15 @@
+[core]
+	notifications = true
+	exportkeys = true
+	autoimport = false
+	nopager = false
+	parsing = true
+	cliptimeout = 14400
+[mounts]
+	path = /Users/juharu/.local/share/gopass/stores/root
+[show]
+	safecontent = false
+[generate]
+	autoclip = false
+[recipients]
+	hash = ce8cafb766034dfac9afe409f584e8977fd11b8d2feda7bef72ec846a4582372

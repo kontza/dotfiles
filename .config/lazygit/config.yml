@@ -1,0 +1,39 @@
+gui:
+  showIcons: true
+  theme:
+    lightTheme: false
+    activeBorderColor:
+      - "#a6e3a1" # Green
+      - bold
+    inactiveBorderColor:
+      - "#cdd6f4" # Text
+    optionsTextColor:
+      - "#89b4fa" # Blue
+    selectedLineBgColor:
+      - "#313244" # Surface0
+    selectedRangeBgColor:
+      - "#313244" # Surface0
+    cherryPickedCommitBgColor:
+      - "#94e2d5" # Teal
+    cherryPickedCommitFgColor:
+      - "#89b4fa" # Blue
+    unstagedChangesColor:
+      - red # Red
+git:
+  paging:
+    pager: delta --paging=never
+customCommands:
+  - key: E
+    prompts:
+      - type: input
+        title: Enter commit message
+        initialValue: ''
+    description: Add empty commit
+    context: commits
+    command: git commit --allow-empty -m "{{index .PromptResponses 0}}"
+    loadingText: Committing empty commit...
+  - key: V
+    description: Extract the latest Jira-ticket from commits
+    context: global
+    command: git log --oneline -10|grep -E '(VNKEU|VEJP)-[0-9]+' -o|head -1|tr -d '\n'|pbcopy
+    loadingText: Copied the latest Jira-ticket

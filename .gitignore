@@ -1,0 +1,11 @@
+.config/lazygit/state.yml
+.config/fish/fish_variables
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+lazy-lock.json
