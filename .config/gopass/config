@@ -6,7 +6,7 @@
 	parsing = true
 	cliptimeout = 14400
 [mounts]
-	path = /Users/juharu/.local/share/gopass/stores/root
+	path = /Users/juharu/privfiles/gopass_stores
 [show]
 	safecontent = false
 [generate]

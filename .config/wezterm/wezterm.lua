@@ -156,7 +156,7 @@ end)
 
 config.color_scheme = "Catppuccin Mocha"
 config.default_prog = { "/usr/local/bin/fish", "-l" }
-config.font = wezterm.font("VictorMono Nerd Font", { weight = "DemiBold" })
+config.font = wezterm.font("Hack Nerd Font", { weight = "Regular" })
 config.font_size = 14
 config.initial_cols = 140
 config.initial_rows = 42
