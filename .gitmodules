@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:kontza/lazyvim.git
+[submodule ".config/tmux/plugins/tmux"]
+	path = .config/tmux/plugins/tmux
+	url = https://git::@github.com/catppuccin/tmux
