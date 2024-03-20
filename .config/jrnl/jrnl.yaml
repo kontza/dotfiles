@@ -9,6 +9,7 @@ editor: /usr/local/bin/nvim
 encrypt: false
 highlight: true
 indent_character: '|'
+display_format: markdown
 journals:
   default:
     display_format: markdown
