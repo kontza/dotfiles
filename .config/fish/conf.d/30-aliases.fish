@@ -9,10 +9,10 @@ else
     end
 end
 
-function ne --description 'Find a file with fd and open it in Neovim'
-    if count $argv > /dev/null
-        set -l PATTERN (string join '|' $argv)
-        eval "fd '($PATTERN)'|xargs nvim"
+function ne --description 'Find a file with fzf and open it in Neovim'
+    if count $argv >/dev/null
+        set -l PATTERN (string join ' ' $argv)
+        eval "nvim (fzf -1 -q '$PATTERN')"
     else
         echo "Gimme some files to find and open"
     end
@@ -30,7 +30,7 @@ function x
     end
 end
 
-function 'jwt-show'
+function jwt-show
     jwt decode -j $argv[1]
 end
 
@@ -38,7 +38,7 @@ function dotdate
     echo (date '+%y').(math (date '+%m')).(math (date +%e))
 end
 
-function 'swagger-to-typescript' --description 'Converts the given JSON to TypeScript.'
+function swagger-to-typescript --description 'Converts the given JSON to TypeScript.'
     if test (count $argv) -lt 1
         echo "Usage:
     swagger-to-typescript somefile.json"
@@ -77,7 +77,7 @@ function ray --description 'Runs operations on a Liferay bundle. Args: 1. A Life
             watch "pgrep -lf java|fgrep $argv[1]"
         end
         function liferay_wipelog
-            echo z > $argv[1]/tomcat/logs/catalina.out
+            echo z >$argv[1]/tomcat/logs/catalina.out
         end
         function liferay_lnav
             lnav $argv[1]/tomcat/logs/catalina.out
@@ -127,8 +127,7 @@ function mov2gif --description 'Converts a given MOV to a 10 FPS GIF.'
     else
         set _input_file $argv[1]
         set _output_file (string split -r -m1 . $argv[1])[1]".gif"
-        ffmpeg -i "$_input_file" -pix_fmt rgb24 -r 10 -f gif - | \
-            gifsicle --optimize=3 --delay=3 > "$_output_file"
+        ffmpeg -i "$_input_file" -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 >"$_output_file"
     end
 end
 
@@ -148,5 +147,5 @@ function wiki
 end
 
 function echr
-    printf %"$COLUMNS"s |tr " " "$argv[1]"
+    printf %"$COLUMNS"s | tr " " "$argv[1]"
 end
