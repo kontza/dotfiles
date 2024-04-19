@@ -576,7 +576,7 @@ mouse-scroll-multiplier = 1
 # 
 # Changing this value at runtime (and reloading config) will only affect new
 # windows, tabs, and splits.
-background-opacity = 1
+background-opacity = 0.85
 
 # A positive value enables blurring of the background when background-opacity
 # is less than 1. The value is the blur radius to apply. A value of 20
@@ -962,7 +962,7 @@ window-width = 140
 # The default value is `default`.
 # 
 # This is currently only supported on macOS. This has no effect on Linux.
-window-save-state = default
+window-save-state = never
 
 # Resize the window in discrete increments of the focused surface's cell size.
 # If this is disabled, surfaces are resized in pixel increments. Currently
