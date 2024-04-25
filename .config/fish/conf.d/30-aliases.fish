@@ -71,10 +71,10 @@ function ray --description 'Runs operations on a Liferay bundle. Args: 1. A Life
             eval $argv[1]/tomcat/bin/shutdown.sh
         end
         function liferay_kill
-            kill -KILL (pgrep -lf java|fgrep $argv[1]|awk '{print $1}')
+            kill -KILL (pgrep -lf java|awk "/$agv[1]/{print $1}")
         end
         function liferay_watch
-            watch "pgrep -lf java|fgrep $argv[1]"
+            watch "pgrep -lf java|rg $argv[1]"
         end
         function liferay_wipelog
             echo z >$argv[1]/tomcat/logs/catalina.out
