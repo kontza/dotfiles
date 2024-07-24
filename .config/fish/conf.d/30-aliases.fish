@@ -1,5 +1,5 @@
 # Set 'aliases', functions in Fish.
-if command -q exa
+if command -q eza
     function d
         eza -laFag $argv
     end
