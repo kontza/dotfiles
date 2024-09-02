@@ -26,7 +26,7 @@ function fish_prompt
         set SYSTEM_PROMPT (fish_git_prompt)
         string match -eq $MASTER_NAME $SYSTEM_PROMPT
         if test $status -eq 0
-            set VTAG (git describe --tags)
+            set VTAG (git describe --tags 2> /dev/null)
         end
     end
     printf "%s:%s%s %s\n❯ " \
