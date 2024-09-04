@@ -18,7 +18,7 @@ function fish_prompt
 
     printf "%s:" (prompt_login)
     set_color bryellow
-    echo -n (prompt_pwd -d1 -D2)
+    echo -n (prompt_pwd -d2 -D2)
     set_color normal
     echo -n (fish_git_prompt)
     if test -d .git
