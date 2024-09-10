@@ -26,7 +26,8 @@
 # Changing this configuration at runtime will only affect new terminals, i.e.
 # new windows, tabs, etc.
 # font-family = "Hack FC Ligatured CCG"
-font-family="VictorMono Nerd Font Mono"
+# font-family = "VictorMono Nerd Font Mono"
+font-family = "HackGen Console NF Regular"
 
 font-family-bold = 
 font-family-italic = 
