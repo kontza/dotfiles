@@ -11,3 +11,8 @@
     ```sh
     stow .
     ```
+5. Update `bat` cache:
+
+    ```sh
+    bat cache --build
+    ```
