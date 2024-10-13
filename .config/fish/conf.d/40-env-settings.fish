@@ -7,6 +7,7 @@ if test (uname -s|rg Linux)
     else
         set -x GOPATH "$HOME/gopath"
     end
+    set -x EDITOR (which nvim)
     fish_add_path /snap/bin
     fish_add_path $HOME/.local/bin
 else
