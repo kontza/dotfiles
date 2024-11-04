@@ -1,6 +1,7 @@
 # Misc env settings.
 set -x GIT_PAGER ""
 set -x HOSTALIASES $HOME/.hosts
+fish_add_path -pP /opt/homebrew/bin
 if test (uname -s|rg Linux)
     if test "$hostname" = otsonkolo
         set -x GOPATH "/opt/$USER/gopath"
