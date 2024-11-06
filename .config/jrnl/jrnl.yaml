@@ -5,17 +5,17 @@ colors:
   title: none
 default_hour: 9
 default_minute: 0
-editor: /usr/local/bin/nvim
+editor: /opt/homebrew/bin/nvim
 encrypt: false
 highlight: true
-indent_character: '|'
+indent_character: "|"
 display_format: markdown
 journals:
   default:
     display_format: markdown
-    journal: ~/wiki/omat/journal
+    journal: ~/wiki/omat/journal/
 linewrap: 100
-tagsymbols: '#@'
+tagsymbols: "#@"
 template: false
-timeformat: '%F %a %R'
+timeformat: "%F %a %R"
 version: v4.1
