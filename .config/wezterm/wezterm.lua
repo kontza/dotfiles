@@ -6,7 +6,7 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = "Catppuccin Mocha"
-config.default_prog = { "/usr/local/bin/fish", "-l" }
+config.default_prog = { "/opt/homebrew/bin/fish" }
 -- config.font = wezterm.font("Hack FC Ligatured CCG", { weight = "Regular" })
 config.font_size = 14
 config.initial_cols = 140
