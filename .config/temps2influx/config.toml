@@ -1,0 +1,8 @@
+serial-port = "/dev/ttyUSB0"
+influx-host = "http://localhost:8086"
+influx-token = "alKnmks_IUXXteBEWafU5-4l5Yj4hfC9r_uiT5dhrNx6ddVffgfWkl4GIr0A_tjx7tEuYznG6h61rpL8l6Pctg=="
+influx-org = "Karhunkierros"
+influx-bucket = "siurlahti"
+[device-to-tag]
+  28f501ea030000fc = "Autotalli"
+  28a7f1d92a82c8 = "Kammari"
