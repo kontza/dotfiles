@@ -16,3 +16,6 @@
     ```sh
     bat cache --build
     ```
+
+# Where have `privfiles` gone?
+Relocated to home-Gitea.
