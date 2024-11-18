@@ -1,4 +1,6 @@
-# How to use
+# My Dotfile Repo
+
+## How to use
 1. Clone this repo to `~/dotfiles`
 2. `cd` into the cloned repo.
 3. Verify what would be done:
@@ -17,5 +19,6 @@
     bat cache --build
     ```
 
-# Where have `privfiles` gone?
+## Where have `privfiles`/`vim-kamat` gone?
 Relocated to home-Gitea.
+
