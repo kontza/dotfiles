@@ -31,7 +31,7 @@ function x
 end
 
 function jwt-show
-    jwt decode -j $argv[1]
+    echo -n $argv[1] | jq -R 'split(".") | .[0],.[1] | @base64d | fromjson'
 end
 
 function dotdate
