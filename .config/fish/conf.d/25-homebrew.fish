@@ -8,8 +8,8 @@ if test (uname|grep Darwin)
         /opt/homebrew/bin \
         /opt/homebrew/sbin \
         /opt/homebrew/opt/ruby/bin \
-        /opt/homebrew/lib/ruby/gems/3.3.0/bin \
-        $HOME/.gem/ruby/3.3.0/bin
+        /opt/homebrew/lib/ruby/gems/3.4.0/bin \
+        $HOME/.gem/ruby/3.4.0/bin
 
     if test -n "$MANPATH[1]"
         set --global --export MANPATH '' $MANPATH
