@@ -661,7 +661,7 @@ unfocused-split-fill =
 # fish --with --custom --args`. The `-e` flag also automatically sets
 # `gtk-single-instance = false` (no matter what) to ensure that a new
 # instance is launched and the CLI args are respected.
-command = /Users/juharuotsalainen/Applications/fish.app/Contents/Resources/base/usr/local/bin/fish
+command = /opt/homebrew/bin/fish
 
 # If true, keep the terminal open after the command exits. Normally, the
 # terminal window closes when the running command (such as a shell) exits.
