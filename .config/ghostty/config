@@ -1086,7 +1086,7 @@ focus-follows-mouse = false
 #   * `allow`
 #   * `deny`
 #
-clipboard-read = ask
+clipboard-read = allow
 
 clipboard-write = allow
 # Trims trailing whitespace on data that is copied to the clipboard. This does
